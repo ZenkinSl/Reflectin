@@ -9,7 +9,7 @@ public class Dog{
         this.special = special;
     }
 
-    public void bark(String voice){
+    private void bark(String voice){
         if (voice == null) voice = "vaf vaf";
         System.out.println(voice);
     }
