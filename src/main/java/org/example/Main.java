@@ -9,6 +9,7 @@ public class Main {
         Dog lisa = new Dog("Lisa", 5, "Kolly");
         Class<?> clazz = lisa.getClass();
         Method method = clazz.getMethod("bark", String.class);
+        method.setAccessible(true);
         Object result = method.invoke(lisa, "meow");
     }
 }
